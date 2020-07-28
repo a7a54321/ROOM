@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block style %}
+        <link rel="stylesheet" href="{% static 'main/style.css' %}" type="text/css" />
+{% endblock %}
+    
+  {% block content %}
+        <h1>MalMal</h1>
+        <!--button type ="button" class="btn btn-primary">LOGIN</button-->
+        <!--button type ="button" class="btn btn-primary">Sign Up</button-->
+  
+        <h3><a href="{% url 'main:trendingnow' %}">방금 올라왔어요🔥</a></h3>
+        <div class="card" style="width: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        
+        <h3><a href="{% url 'main:c1' %}">Category 1</a></h3>
+        <div class="card" style="width: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        
+        <h3><a href="{% url 'main:c2' %}">Category 2</a></h3>
+        <div class="card" style="width: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        
+        <h3><a href="{% url 'main:c3' %}">Category 3</a></h3>
+        <div class="card" style="width: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+  {% endblock %}                
